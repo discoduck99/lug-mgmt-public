@@ -221,18 +221,6 @@ Displays a member's profile information.
 
 For a detailed history of changes, see the [changelog.txt](changelog.txt) file.
 
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
-
----
-
 ## 📄 License
 
 This project is licensed under the GPL-2.0 License - see the [LICENSE](LICENSE) file for details.

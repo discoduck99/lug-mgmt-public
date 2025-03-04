@@ -1,0 +1,210 @@
+== Changelog ==
+
+= [1.2.6] =
+* Added: Character limit (1,000) to member profile biographical info
+* Added: Real-time character counter for biographical info field
+* Added: Visual feedback when approaching character limit
+* Changed: Updated biographical info description text to include Code of Conduct reference
+* Hotfix: Fixed the dashboard widget loading issue
+
+= [1.2.5] =
+* Added: Anonymous Feedback Widget to user dashboard:
+  - Allows members to submit feedback anonymously
+  - Sends feedback directly to LUG administrators via email
+  - Includes success confirmation and error handling
+* Added: LEGO-specific profile fields for members:
+  - Bricklink store URL
+  - Rebrickable profile URL
+  - LEGO Ideas profile URL
+* Added: Custom icons for LEGO profile links on member profiles
+* Fixed: Database prefix handling for user capabilities check
+  - Updated capabilities meta_key check to use dynamic WordPress table prefix
+  - Ensures compatibility with non-standard database prefixes
+* Added: Clear Member Selection button to participation page
+* Changed: Member selections now persist when switching date tabs
+* Changed: Member selections now persist after adding/removing roles
+* Fixed: The checkboxes in the member list are now aligned properly
+* Fixed: The dashicons are now enqueued properly
+
+= [1.2.4] =
+* Fixed: My LUG Participation widget now correctly calculates unique activities:
+  - Activities count now shows number of unique events participated in, regardless of multiple roles or dates
+  - Eligible activities count now shows upcoming activities based on end dates
+  - Excluded already participated activities from eligible count
+  - Improved activity date handling to use end dates for eligibility
+* Changed: Dashboard widget queries optimized for better performance
+* Added: Debug logging for activity calculations in dashboard widget
+* Fixed: The auto update system
+* Fixed: My LUG Participation widget now correctly displays dates using participation_date from activities
+* Fixed: Registration and dues dates now use registration_date and dues_date from member_status table
+* Fixed the Auto Update system
+* Fixed date display issues in participation management:
+  - Corrected day tab labels to show proper dates
+  - Fixed missing date in role assignment section header
+  - Improved timezone handling for date displays
+* Fixed date synchronization between tabs and role assignment section
+
+= [1.2.3] =
+* Added: New Reports page for detailed member participation history
+* Added: Year filter with "All Years" option for comprehensive reporting
+* Added: Total points calculation for selected report period
+* Changed: Moved password reset functionality to separate class file
+* Changed: Updated the order of the members in the participation page
+* Added: Automatic sorting of members with roles to top of participation page
+* Added: Visual distinction between members with and without roles
+* Added: Maintained role-based sorting during member search
+* Fixed: Manual Points tab now correctly displays member list on initial load
+* Fixed: Member list and table visibility when switching between tabs
+* Changed: Improved tab switching logic for better reliability
+* Changed: Manual Points tab now displays full names instead of display names
+* Fixed: Dashboard Total Points widget now correctly uses member_status table for registration and dues points
+* Changed: Updated flag points calculation to use new database structure instead of legacy user meta
+* Added: Year-specific flag points calculation for registration and dues status
+* Fixed: Potential double-counting of points in dashboard statistics
+* Fixed: My LUG Participation widget now correctly includes registration and dues points in total calculation
+* Added: Improved debug logging for participation points calculation
+
+= [Hotfix] = 
+* Fixed: Password reset system no longer modifies numeric usernames
+* Added: Dedicated password reset handler class for improved organization
+* Fixed: Username consistency during password reset process
+
+= [1.2.2] =
+* Added: Automatic numeric username generation for new users
+* Added: Default starting point of 1000 for numeric usernames
+* Added: Auto-population of username field in Add New User form
+* Changed: Username field now pre-fills with next available numeric ID
+
+= [1.2.1] =
+* Changed: Improved dashboard layout with separate rows for user stats and activity stats
+* Fixed: Year selector now properly updates all dashboard statistics via AJAX
+* Added: Loading indicator for dashboard stat updates
+* Changed: The placement of the role assignment section on the participation page is above the members table
+* Changed: The placement of the Registration & Dues Status section on the registration/dues page is above the members table
+
+= [1.2.0] =
+* Added: New Member Status database table for tracking registration and dues
+* Added: Comprehensive dues management system with multiple payment types (Paid, Gift in Lieu)
+* Added: Registration status tracking system (Complete/Pending)
+* Added: Expiry date management for memberships
+* Added: Automatic year-based member status tracking
+* Added: Bulk actions for updating member statuses
+* Added: Member search and filtering in registration/dues management
+* Added: Status indicators for registration and dues on member list
+* Changed: Restructured how member status is stored and retrieved
+* Changed: Improved member display with full names instead of usernames
+* Fixed: Year selector now properly filters member statuses
+* Fixed: Status consistency across different views
+* Security: Added nonce verification for status updates
+* Security: Enhanced permission checks for admin functions
+* Fixed date display formatting for activities dashboard
+* Corrected registration and dues point calculations
+* Resolved timezone handling issues
+
+= [1.1.85] =
+* Fixed: Role assignment now works correctly on participation page
+
+= [1.1.8] =
+* Added: Status column to roles table for better visibility of role status
+* Added: Role status filter to participation page for easier role visibility
+* Changed: Member list now only shows Full Name
+* Added: Filters to the Activities page
+* Fixed: The undefined property warning in the Lug_Mgmt_User_Profile class
+
+= [1.1.7] =
+* Added: Enhanced error logging for Manual Points system to improve troubleshooting
+* Added: Flickr profile field and social media link on member profiles
+* Added: Direct links from dashboard to participation page with pre-selected activities
+* Added: URL parameter support for year and activity selection in participation management
+* Fixed: Participation page now automatically loads correct activity when accessed from dashboard
+* Fixed: Year selector now correctly updates user statistics on dashboard
+* Fixed: Points calculation consistency across dashboard widgets and rankings
+* Fixed: Activity points now consistently use activity start date for all calculations
+* Fixed: Manual points now correctly included in all point totals
+* Changed: Standardized date handling for Registration and Dues points display
+* Fixed: Member list and date tabs now properly hide when switching to Manual Points tab
+
+= [1.1.6] =
+* Improved: Dashboard Getting Started and Available Shortcodes sections
+* Updated: README.md with new shortcodes and improved documentation
+* Added: Membership Settings page in the admin
+* Added: Membership Status Dashboard Widget
+* Changed: Login redirect to dashboard for all users
+* Removed: Reports page from the plugin
+* Fixed: Initial date tab now automatically loads roles on participation page
+* Fixed: Users no longer need to manually click first date tab to view roles
+* Added: Manual points system for administrators to award additional points
+* Added: Manual points integration with dashboard widgets and rankings
+* Fixed: Points calculation to include both activity and manual points
+* Fixed: Dashboard widget now correctly displays participation dates instead of activity start dates
+* Changed: Updated participation date query to use actual participation records
+* Added: Improved date handling in participation management system
+* Fixed: SQL syntax error in points ranking calculation for dashboard widget
+
+= [1.1.5] =
+* Added: Optional pagination for activities shortcode [lug_activities paginate="true"]
+* Added: AJAX-based loading for improved performance
+* Added: Sorting parameter for activities [lug_activities sort="desc"]
+* Changed: Enhanced styling for pagination controls
+* Added: External URL support for activities with clickable titles and "More Information" links
+* Changed: Activity card layout to accommodate URL display
+* Security: Added proper URL escaping and external link attributes
+* Changed: Reordered the items on the My LUG Participation dashboard widget
+* Changed: README.txt to README.md
+* Added: LICENSE.txt to the plugin
+* Added: User Meta Details for User Profiles
+* Added: User Profile Page
+* Added: User Profile Shortcode
+
+= [1.1.4] =
+* Added: New "My LUG Participation" dashboard widget for members to track their activity
+* Added: New "LUG Points Ranking" dashboard widget showing top participants and current user ranking
+* Added: Year-based filtering for both dashboard widgets
+* Added: Detailed activity breakdown in participation widget
+* Added: Eligible activities counter showing upcoming events
+* Bugfix: Fixed duplicate menu items appearing in WordPress admin navigation
+* Code cleanup: Centralized menu registration to prevent redundant entries
+
+= 1.1.3 =
+* Fixed: Administrator accounts no longer appear in participation member lists
+* Changed: Unified member table handling in participation management
+* Fixed: Role chip styling consistency between initial load and tab changes
+* Added: Loading state management to prevent duplicate requests
+* Fixed: Race condition in activity participation loading
+
+= 1.1.2 =
+
+Added: Native WordPress auto-update support
+Added: Auto-update toggle in plugins page
+Fixed: Update checker improvements
+Fixed: Plugin updater settings
+
+= 1.1.1 =
+* Fixed: CSS styles not loading properly on frontend
+* Added: Proper action hooks for enqueueing public styles and scripts
+* Improved: Code organization for public-facing styles
+
+= 1.1.0 =
+* Added: GitHub-based plugin update system
+* Added: Composer dependency management
+* Added: Plugin Update Checker integration
+* Fixed: Version consistency across plugin files
+* Changed: Improved version tracking system
+* Changed: Restructured plugin initialization
+* Fixed: Roles are now filtered by activity category in participation management
+* Added: New participation tracking type setting for activities (daily or full event)
+* Added: Option to track roles for entire event duration or on daily basis
+* Changed: Activity details meta box now includes participation type selector
+* Changed: Participation management interface adapts based on tracking type
+* Changed: Simplified role assignment UI for full-event participation
+* Fixed: Date tab display now reflects participation tracking type
+* Fixed: Role assignment handling for full-event participation
+* Changed: Made activity time fields optional while keeping dates required
+* Changed: Made activity location field optional
+* Changed: Updated time display throughout plugin to handle empty values
+* Changed: Improved handling of all-day events
+* Fixed: Time validation now properly handles empty values
+* Fixed: Activity queries correctly process events with no specified times
+
+= 1.0.0 =
+* Initial release
