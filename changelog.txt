@@ -1,5 +1,14 @@
 == Changelog ==
 
+= [Unreleased] =
+* Fixed: Member search functionality on participation page:
+  - Search now properly filters when removing characters
+  - Selected members remain visible during search
+  - Selected members stay at top of list while searching
+  - Improved search response time and reliability
+* Changed: Updated member list sorting behavior during search operations
+* Added: Debug logging for member search functionality
+
 = [1.2.6] =
 * Added: Character limit (1,000) to member profile biographical info
 * Added: Real-time character counter for biographical info field
