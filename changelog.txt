@@ -1,5 +1,12 @@
 == Changelog ==
 
+= [1.2.8] =
+* Fixed: Participation tracking for full-event activities
+* Fixed: Data structure consistency between daily and full-event participation
+* Changed: Improved date handling in participation management:
+* Added: Hover tooltip functionality for activity names in dashboard widget
+* Added: Helper text below activities table
+
 = [1.2.7] =
 * Fixed: Unpaid Users dashboard widget calculation:
   - Now correctly uses member_status table instead of legacy user meta
