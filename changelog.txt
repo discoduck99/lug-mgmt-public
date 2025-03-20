@@ -1,6 +1,12 @@
 == Changelog ==
 
-= [Unreleased] =
+= [1.2.7] =
+* Fixed: Unpaid Users dashboard widget calculation:
+  - Now correctly uses member_status table instead of legacy user meta
+  - Properly considers dues expiry dates when calculating unpaid status
+  - Correctly filters by selected year
+  - Improved handling of different dues types (paid and gift in lieu)
+* Fixed: Upcoming Activities widget now correctly shows start date instead of end date
 * Fixed: Member search functionality on participation page:
   - Search now properly filters when removing characters
   - Selected members remain visible during search
@@ -8,6 +14,8 @@
   - Improved search response time and reliability
 * Changed: Updated member list sorting behavior during search operations
 * Added: Debug logging for member search functionality
+* Changed: Participation page now shows all days for an activity on a single table
+* Changed: Activity page filters - Categories fixed, and Date is now a year selector
 
 = [1.2.6] =
 * Added: Character limit (1,000) to member profile biographical info
