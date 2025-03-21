@@ -1,5 +1,10 @@
 == Changelog ==
 
+= [1.2.10] =
+* Added: Member Activities Report tab to Reports page
+* Changed: Reports page structure to use tabbed interface
+* Added: Improved styling for report tables and loading states
+
 = [1.2.9] =
 * Added: Participant counting functionality to participation management
 * Fixed: Role chips now update correctly in participation management
