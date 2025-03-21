@@ -1,5 +1,13 @@
 == Changelog ==
 
+= [1.2.9] =
+* Added: Participant counting functionality to participation management
+* Fixed: Role chips now update correctly in participation management
+* Changed: Improved role assignment UX:
+  - Removed unnecessary page reloads
+  - Maintained member selections between role assignments
+  - Improved role update feedback
+
 = [1.2.8] =
 * Fixed: Participation tracking for full-event activities
 * Fixed: Data structure consistency between daily and full-event participation
