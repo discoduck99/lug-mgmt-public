@@ -1,5 +1,15 @@
 == Changelog ==
 
+= [1.2.11] =
+* Added: Last Login tracking for all users in admin Users page
+* Added: Last Login column to Users list table showing relative time since last login
+* Added: Automatic tracking of user login times going forward
+* Changed: Member Details Report structure to separate Event Name and Role columns
+* Changed: Member Activities Report default sorting to Total Points (Highest First)
+* Removed: Last Activity Date column from Member Activities Report
+* Fixed: Total Points calculation in Member Details Report
+* Changed: Improved table layout and data alignment in Reports page
+
 = [1.2.10] =
 * Added: Member Activities Report tab to Reports page
 * Changed: Reports page structure to use tabbed interface
