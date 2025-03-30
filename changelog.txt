@@ -1,5 +1,14 @@
 == Changelog ==
 
+= [1.3.0]
+* Added: License key validation system for premium features
+* Added: License management page with activation/deactivation functionality
+* Added: Automatic updates for licensed installations
+* Added: License key validation requirement for plugin functionality
+* Changed: Plugin features now require a valid license key to operate
+* Added: Executive and Member WordPress roles with appropriate permissions
+* Added: Enhanced license key input with automatic formatting and improved paste support
+
 = [1.2.11] =
 * Added: Last Login tracking for all users in admin Users page
 * Added: Last Login column to Users list table showing relative time since last login
@@ -255,3 +264,5 @@ Fixed: Plugin updater settings
 
 = 1.0.0 =
 * Initial release
+
+* Added: Enhanced license key input with automatic formatting and improved paste support
