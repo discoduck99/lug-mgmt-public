@@ -1,5 +1,14 @@
 == Changelog ==
 
+= [1.3.1] =
+* Added: Enhanced newsletter recipient groups with Active Members Only, Executives Only, All Members, and Inactive Members Only options
+* Added: HTML email support with basic formatting options for newsletters
+* Added: Membership Renewal Date setting to control when member statuses expire
+* Added: Inactive Member Date setting to control when unpaid members are moved to inactive status
+* Added: Automatic role migration system that moves members to inactive status on the Inactive Member Date
+* Added: Automatic expiry date updates for all members when Membership Renewal Date is changed
+* Added: Enhanced logging for role migration and expiry date updates
+
 = [1.3.0]
 * Added: License key validation system for premium features
 * Added: License management page with activation/deactivation functionality
