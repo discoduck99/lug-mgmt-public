@@ -1,5 +1,8 @@
 == Changelog ==
 
+= [1.3.1.5]
+* Hotfix: Dashboard issues
+
 = [1.3.1] =
 * Added: Enhanced newsletter recipient groups with Active Members Only, Executives Only, All Members, and Inactive Members Only options
 * Added: HTML email support with basic formatting options for newsletters
