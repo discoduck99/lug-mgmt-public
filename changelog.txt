@@ -1,5 +1,13 @@
 == Changelog ==
 
+= [1.3.3] =
+* Added: Enhanced Newsletter Recipients Management
+  - Added Selected Recipients section to show the individual users to recieve the newsletter
+  - Added ability to select User Groups and Individual Users
+  - Added Clear All button to Selected Recipients section
+  - Changed recipient persistence to only save when newsletter is published
+  - Moved GitHub Integration from Settings Page to an API Call
+
 = [1.3.2]
 * Added: Discord Event Integration
   - Added Discord Event Validation
