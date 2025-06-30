@@ -1,12 +1,39 @@
 == Changelog ==
 
+= [2.0.0]
+- Changed: All references to 'User Groups' are now 'LUG User Groups' throughout the admin, user profile, menus, columns, bulk actions, and test outputs for improved clarity and branding.
+- Changed: The 'Roles' admin page and menu are now labeled 'Participation Roles' everywhere, including all headings, table headers, and form labels, for greater clarity.
+- Improved: Consistency and clarity of admin UI labels for both user group and participation role management.
+- Changed: The migration from roles to user groups now runs automatically on plugin install/upgrade, with no manual UI or migration page required. The migration now uses 'Member' (singular) for the group name.
+- Removed: The migration status/admin page, related AJAX/UI code, and obsolete test/migration plan files for a cleaner codebase and admin experience.
+* Changed: The migration now uses 'Member' (singular) for the group name instead of 'Members' to match naming conventions.
+* Removed: Test and migration plan files that are no longer needed.
+* Added: User Groups Management Integration with WordPress Users
+  - Added User Groups column and bulk actions to Users list page
+  - Added User Groups section to user profile pages with checkbox interface
+  - Added duplicate prevention and proper security checks
+* Fixed: The Dues and Registration buttons were broken during the search functionaltiy fix
+* Fixed: The search functionality on the Registration & Dues page
+* Added: Membership Report
+* Added: Tabbed interface for Settings page
+  - Organized settings into Discord Integration, Registration & Dues, and Membership tabs
+  - Improved navigation and user experience
+  - Maintained all existing functionality while making settings more accessible
+* Fixed: Encoding issues with the Newsletter content
+* Fixed: Individual User dropdown displaying wrong Name type on Newsletter Page
+* Fixed: The Discord API Endpoint to: api.lugmgmt.com
+* Added: User Groups Management System
+  - Added new User Groups admin page for managing member groups
+  - Added ability to create, edit, and delete user groups
+* Added: Validation for social media usernames (Twitter, Instagram, TikTok, Flickr) in user profiles. Usernames starting with '@' are now rejected with a field-specific error message.
+
 = [1.3.3] =
 * Added: Enhanced Newsletter Recipients Management
   - Added Selected Recipients section to show the individual users to recieve the newsletter
   - Added ability to select User Groups and Individual Users
   - Added Clear All button to Selected Recipients section
   - Changed recipient persistence to only save when newsletter is published
-  - Moved GitHub Integration from Settings Page to an API Call
+* Updated: GitHub Integration from Settings Page to an API Call
 
 = [1.3.2]
 * Added: Discord Event Integration
