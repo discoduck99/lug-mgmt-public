@@ -1,5 +1,11 @@
 == Changelog ==
 
+= [2.1.1]
+* Fixed: The default LUG User Group was not getting assigned to new users
+* Fixed: The Add to LUG User Group bulk action was not working
+* Changed: The Dashboard Statistics Class to use LUG User Groups 
+* Changed: The Dashboard Widgets to use the LUG User Groups
+
 = [2.1.0]
 * Added: Enhanced My Signups Page with Future Activity Filtering
   - Added: Future activity filtering to only show activities with start dates on or after current date
@@ -14,7 +20,7 @@
   - Changed: The Role and User Group Filters to be Combined (AND)
 
 = [2.0.0]
--* Changed: All references to 'User Groups' are now 'LUG User Groups' throughout the admin, user profile, menus, columns, bulk actions, and test outputs for improved clarity and branding.
+* Changed: All references to 'User Groups' are now 'LUG User Groups' throughout the admin, user profile, menus, columns, bulk actions, and test outputs for improved clarity and branding.
 * Changed: The 'Roles' admin page and menu are now labeled 'Participation Roles' everywhere, including all headings, table headers, and form labels, for greater clarity.
 * Improved: Consistency and clarity of admin UI labels for both user group and participation role management.
 * Changed: The migration from roles to user groups now runs automatically on plugin install/upgrade, with no manual UI or migration page required. The migration now uses 'Member' (singular) for the group name.
