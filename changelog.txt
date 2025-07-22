@@ -1,5 +1,31 @@
 == Changelog ==
 
+= [2.1.2]
+* Added: Logic to the LUG Activities meta data to to default to an empty string if the value is null
+* Bugfix: Removed the ability to change the LUG User Group selections from non-Executive accounts
+* Added: Activity Category Change Management System
+  - Added: intelligent detection when changing activity categories with existing participation records
+  - Added: modal workflow with three options: remove current participation, map roles to new category, or cancel change
+  - Added: role mapping functionality to convert existing participation records to equivalent roles in the new category
+  - Changed: category updates to process seamlessly via AJAX without page refresh or data loss
+* Added: Participation Tracking Method Change Management System
+  - Added: intelligent detection when changing participation tracking methods with existing participation records
+  - Added: modal workflow with three options: remove current participation, map participation to new method, or cancel change
+  - Added: data migration functionality to convert between daily and full event participation tracking
+  - Added: consolidation logic to merge daily records into full event records
+  - Added: expansion logic to distribute full event records across all activity dates
+  - Added: staged modal coordination to handle simultaneous category and participation tracking changes
+  - Changed: participation tracking updates to process seamlessly via AJAX without data loss
+* Fixed: Discord Integration
+  - Changed: API Requests to be HTTPS
+  - Added: Join_Server, Join_Status, Leave Server API Requests
+  - Added: Used License Key as plugin identifier
+* Enhanced Newsletter Recipients UI: Dynamic LUG User Group selection, improved styling, and customizable shortcut groups.
+* Improved: Newsletter group shortcuts are now ordered and labeled for clarity.
+* Changed: Membership Report group selector now uses LUG User Groups, with special options for All Members, Active Members, Executives, Inactive Members, and Unpaid Members, and lists all other custom groups.
+* Changed: Membership Report logic now filters users based on LUG User Groups, ensuring accurate results for each group option, including unpaid members.
+
+
 = [2.1.1]
 * Fixed: The default LUG User Group was not getting assigned to new users
 * Fixed: The Add to LUG User Group bulk action was not working
@@ -353,5 +379,3 @@ Fixed: Plugin updater settings
 
 = 1.0.0 =
 * Initial release
-
-* Added: Enhanced license key input with automatic formatting and improved paste support
