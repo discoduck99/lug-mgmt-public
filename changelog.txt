@@ -1,5 +1,19 @@
 == Changelog ==
 
+= [2.1.3]
+* Fixed: Ensured the publish action is preserved in both the category-change and tracking-change scripts, and the post is published first time
+* Added: Four-tab admin interface for Shifts & Equipment—separating Shift Setup, Shift Signups (calendar view), Equipment Setup, and Equipment Signups (calendar view) for improved clarity and workflow.
+* Improved: Shift and Equipment signups now display in a modern calendar-style layout, grouping signups under each shift or equipment item for easier management.
+* Enhanced: Drag-and-drop reordering for both shifts and equipment in their respective setup tabs.
+* Added: MOC Signup System
+  - Added: MOC Signup system allowing users to register MOCs for activities, including table space, power needs, and notes.
+  - Added: Admin interface for managing MOC signups, with Approve/Reject actions and optional rejection reason modal.
+  - Improved: Rejection reasons are stored and displayed to users inline in both table and card views when a signup is rejected.
+  - Enhanced: Color-coded status indicators (green for Approved, red for Rejected, yellow for Pending) in both admin and user MOC signup views.
+  - Improved: User-facing My MOC Signups section with inline rejection reason and status, and working Cancel Signup button for card view.
+  - Fixed: Numerous UI/UX issues for MOC signup workflow, including modal visibility, script loading, and action button display logic.
+  - Added: The inventory limits and statuses on the MOC Signup Page(s)
+
 = [2.1.2]
 * Added: Logic to the LUG Activities meta data to to default to an empty string if the value is null
 * Bugfix: Removed the ability to change the LUG User Group selections from non-Executive accounts
